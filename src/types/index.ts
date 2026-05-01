@@ -10,7 +10,7 @@ export interface Painting {
 export interface Category {
     id: string;
     name: string;
-    elements?: Element[];
+    elements?: GameElement[];
     subcategories?: Category[];
 }
 
@@ -19,3 +19,14 @@ export interface Element {
     name: string;
 }
 
+export type ElementType = 'clue' | 'info';
+
+export interface ElementRuntime {
+    solved: boolean;
+    clueRevealed: boolean;
+    currentStep: number;
+}
+
+export interface GameElement extends Element {
+    type: ElementType;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { paintingData } from "./data/painting";
 import CategoryTree from "./components/CategoryTree";
-import './styles/App.css';
+// import './styles/App.css';
 
 const App: React.FC = () => {
     return(

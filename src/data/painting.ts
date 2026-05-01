@@ -11,8 +11,8 @@ export const paintingData: Painting = {
       id: 'basic',
       name: 'Basic Elements',
       elements: [
-        { id: 'lines', name: 'Swirling Lines' },
-        { id: 'shapes', name: 'Organic Shapes' },
+        { id: 'lines', name: 'Swirling Lines', type: 'clue' },
+        { id: 'shapes', name: 'Organic Shapes', type: 'info' },
       ],
     },
     {
@@ -23,16 +23,16 @@ export const paintingData: Painting = {
           id: 'foreground',
           name: 'Foreground',
           elements: [
-            { id: 'cypress', name: 'Cypress Tree' },
-            { id: 'village', name: 'Village' },
+            { id: 'cypress', name: 'Cypress Tree', type: 'clue' },
+            { id: 'village', name: 'Village', type: 'info' },
           ],
         },
         {
           id: 'sky',
           name: 'Sky',
           elements: [
-            { id: 'stars', name: 'Stars' },
-            { id: 'moon', name: 'Moon' },
+            { id: 'stars', name: 'Stars', type: 'info' },
+            { id: 'moon', name: 'Moon', type: 'clue' },
           ],
         },
       ],
