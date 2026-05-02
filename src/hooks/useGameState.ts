@@ -43,5 +43,10 @@ export function useGameState(elements: {id:string}[]) {
     const initialState = elements.reduce((acc, el) => {
         acc[el.id] = {solved: false, clueRevealed: false, currentStep:0 };
         return acc;
-    }, {} as GameState)
+    }, {} as GameState);
+
+    const [state, dispatch] = useReducer(gameReducer, initialState);
+    // console.log(initialState);
+
+    return {state, dispatch};
 }
